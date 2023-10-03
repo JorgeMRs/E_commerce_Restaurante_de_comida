@@ -5,7 +5,7 @@ import { Navbar } from "../component/navbar.js"
 import { CarruselInicio } from "../component/Carrusel_inicio.jsx"
 import { Extras_prod } from "../component/Extras_Productos.jsx"
 import { ProductListContainer } from "../component/ProductListContainer.jsx";
-import {Contacto } from "../component/Contacto.jsx"
+import { Contacto } from "../component/Contacto.jsx"
 
 
 
@@ -22,24 +22,26 @@ export const Home = () => {
 	return (
 		<div className="text-center pb-5">
 			<Extras_prod />
-			<div className="NANA mb-4">
+			<div className="Navbar_N ">
 				<Navbar setSeccionActiva={setSeccionActiva} />
 			</div>
-			{seccionActiva === "Inicio" && (
-				<div className="Inicio">
-					<CarruselInicio />
-				</div>
-			)}
-			{seccionActiva === "Catalogo" && (
-				<div className="Catalogo">
-					<ProductListContainer />					
-				</div>
-			)}
-			{seccionActiva === "Contacto" && (
-				<div className="Contacto">
-					<Contacto />					
-				</div>
-			)}
+			<div className="inicio_H">
+				{seccionActiva === "Inicio" && (
+					<div className="Inicio">
+						<CarruselInicio />
+					</div>
+				)}
+				{seccionActiva === "Catalogo" && (
+					<div className="Catalogo">
+						<ProductListContainer />
+					</div>
+				)}
+				{seccionActiva === "Contacto" && (
+					<div className="Contacto">
+						<Contacto />
+					</div>
+				)}
+			</div>
 		</div>
 	);
 };

@@ -121,6 +121,12 @@
   width: 100%;
 }
 
+/* .navbgg:hover{
+
+}
+   */
+
+
 
 .from_contacto {
   width: 50%;
@@ -134,4 +140,35 @@
     width: 100%;
   }
 
+}
+
+
+.etiquet_N {
+  color: white !important;
+}
+
+li.navbgg {
+
+  padding: 0px 10px 15px 0px;
+  position: relative;
+  background: black;
+}
+
+li.navbgg::after {
+  content: " ";
+  width: 0%;
+  height: 4px;
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+li.navbgg:hover::after {
+  width: 100%;
+}
+
+.boton_Nav {
+  background: black;
+  border: 1px solid antiquewhite !important;
 }

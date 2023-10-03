@@ -135,8 +135,8 @@ export const Navbar = ({ setSeccionActiva }) => {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light">
-        <div className="w-100">
-          <div className="navbar-header">CARRITO EL TATIN</div>
+        <div className="w-100 ">
+          {/* <div className="navbar-header">CARRITO EL TATIN</div> */}
           <div className="mb-3 d-flex align-items-center justify-content-between w-100 position-relative">
             <div className="d-flex align-items-center">
               <img src={Logo} alt="Logo" className="logo" />
@@ -193,7 +193,7 @@ export const Navbar = ({ setSeccionActiva }) => {
             </div>
           </div>
           <button
-            className="navbar-toggler navdd"
+            className="navbar-toggler boton_Nav"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -204,19 +204,19 @@ export const Navbar = ({ setSeccionActiva }) => {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav mx-auto">
+            <ul className="navbar-nav mx-auto navb_UL">
               <li className="nav-item navbgg">
-                <Link to="/" className="nav-link" onClick={() => setSeccionActiva("Inicio")}>
+                <Link to="/" className="nav-link etiquet_N" onClick={() => setSeccionActiva("Inicio")}>
                   Inicio
                 </Link>
               </li>
               <li className="nav-item navbgg">
-                <Link to="/" className="nav-link" onClick={() => setSeccionActiva("Catalogo")}>
+                <Link to="/" className="nav-link etiquet_N" onClick={() => setSeccionActiva("Catalogo")}>
                   Catálogo
                 </Link>
               </li>
               <li className="nav-item navbgg">
-                <Link to="/" className="nav-link" onClick={() => setSeccionActiva("Contacto")}>
+                <Link to="/" className="nav-link etiquet_N" onClick={() => setSeccionActiva("Contacto")}>
                   Contacto
                 </Link>
               </li>
