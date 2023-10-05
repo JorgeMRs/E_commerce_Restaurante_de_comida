@@ -64,29 +64,14 @@
 }
 
 
-@media only screen and (max-device-width: 600px) {
-  .parrafo_bienvenida {
-
-    display: none;
-
-  }
-
-  .cerrar_sesion {
-    font-size: 10px;
-  }
-}
+@media only screen and (max-device-width: 600px) {}
 
 
-@media only screen and (max-device-width: 670px) {
-
-
-  .cerrar_sesion {
-    font-size: 15px;
-  }
-}
+@media only screen and (max-device-width: 670px) {}
 
 .navbgg {
   width: 100%;
+  color: white;
 }
 
 
@@ -108,17 +93,21 @@
 
   .boton-C {
     font-size: 10px;
+    color: white;
   }
 
   .cerrar_sesion {
-    font-size: 10px;
+    font-size: 16px;
+    color: white;
   }
 
 }
 
 
+
 .navbgg {
   width: 100%;
+  text-align: end;
 }
 
 /* .navbgg:hover{
@@ -149,7 +138,7 @@
 
 li.navbgg {
 
-  padding: 0px 10px 15px 0px;
+  /* padding: 0px 10px 15px 0px; */
   position: relative;
   background: black;
 }
@@ -171,4 +160,16 @@ li.navbgg:hover::after {
 .boton_Nav {
   background: black;
   border: 1px solid antiquewhite !important;
+}
+
+
+@media only screen and (max-device-width: 980px) {}
+
+.Cerrar_se {
+  color: white;
+}
+
+.administrar_N {
+  color: white;
+  font-size: 16px;
 }
