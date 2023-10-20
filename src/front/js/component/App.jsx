@@ -16,6 +16,7 @@ import { Navigate } from "react-router-dom";
 // Make sure to call loadStripe outside of a component’s render to avoid
 // recreating the Stripe object on every render.
 // This is your test publishable API key.
+//prueba
 const stripePromise = loadStripe("pk_test_51Nsr4fKXj5LWRngyICcySMhyijuGZpNBAj1mAEgpVe96QSXP0c3wT3W2kA7T1nzikklh0UqthqmLvYqh7JY9Si4O00Bkpvecrd");
 
 export default function App() {
