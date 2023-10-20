@@ -16,6 +16,8 @@ export const CarruselInicio = () => {
             // Ordenar el array para que el producto del menú del día aparezca primero
             productos.sort((a, b) => b.its_daily_menu - a.its_daily_menu);
 
+
+
             console.log("Productos filtrados:", productos);
             setArrayProductos(productos);
         }
